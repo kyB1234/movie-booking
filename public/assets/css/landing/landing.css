@@ -1,0 +1,60 @@
+.carousel-inner {
+    height: 100%;
+    object-fit: contain;
+    aspect-ratio: 16/9;
+}
+
+.carousel-inner:hover {
+    cursor: pointer;
+}
+
+.new-upcoming-css {
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 5px;
+    overflow-x: auto;
+}
+
+.top-card {
+    max-height: 300px;
+    /*aspect-ratio: 1;*/
+    object-fit: contain;
+}
+
+.top-card:hover {
+    cursor: pointer;
+}
+
+.new-top-css {
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 5px;
+    overflow-x: auto;
+    justify-content: flex-start;
+}
+
+.new-top-css > img {
+    margin: auto 1em !important;
+}
+
+.genre-card {
+    max-height: 300px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.genre-card:hover {
+    cursor: pointer;
+}
+
+.new-genre-css {
+    min-height: 300px;
+    min-width: 300px;
+    margin-right: 5px;
+    overflow-x: auto;
+}
+
+.para {
+    text-align: center;
+    font-weight: bold;
+}

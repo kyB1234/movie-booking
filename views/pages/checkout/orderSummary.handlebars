@@ -1,0 +1,97 @@
+{{#section "styles"}}
+    <link rel="stylesheet" href="/public/assets/css/checkout/checkout.css">
+
+{{/section}}
+<div class="container">
+    <div class="row m-0">
+        <div class="col-lg-7 pb-5 pe-lg-5">
+            <div class="row">
+                <div class="col-12 p-5">
+                    <img
+                            class="movieImg"
+
+                            src="{{purchaseSummary.movieImage}}"
+                            alt="">
+                </div>
+                <div class="row m-0 bg-light">
+                    <div class="col-md-4 col-6 ps-30 pe-0 my-4">
+                        <p class="text-muted">Location</p>
+                        <p class="h5">{{purchaseSummary.theatreName}}</p>
+                    </div>
+                    <div class="col-md-4 col-6 ps-30 my-4">
+                        <p class="text-muted">Date</p>
+                        <p class="h5 m-0">{{dateParser purchaseSummary.dateTime}}</p>
+                    </div>
+                    <div class="col-md-4 col-6 ps-30 my-4">
+                        <p class="text-muted">Time</p>
+                        <p class="h5 m-0">{{timeParser purchaseSummary.dateTime}}</p>
+                    </div>
+                    <div class="col-md-4 col-6 ps-30 my-4">
+                        <p class="text-muted">Seats</p>
+
+                        <p class="h5 m-0">{{purchaseSummary.seats}}</p>
+                    </div>
+                    <div class="col-md-4 col-6 ps-30 my-4">
+                        <p class="text-muted">Language</p>
+                        <p class="h5 m-0">{{purchaseSummary.language}}</p>
+                    </div>
+                    <div class="col-md-4 col-6 ps-30 my-4">
+                        <p class="text-muted">Duration</p>
+                        <p class="h5 m-0">{{secondsParser purchaseSummary.runtime}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 p-0 ps-lg-4">
+            <div class="row m-0">
+                <div class="col-12 px-4">
+                    <div class="d-flex align-items-end mt-4 mb-2">
+
+                        <p class="h4 m-0">{{purchaseSummary.movieName}} </p>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <p class="textmuted">Seats</p>
+
+                        <p class="fs-14 fw-bold">{{purchaseSummary.noOfSeats}}</p>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <p class="textmuted">Subtotal</p>
+
+                        <p class="fs-14 fw-bold"><span class="fas fa-dollar-sign pe-1"></span>{{purchaseSummary.price}}
+                            0</p>
+                    </div>
+
+                    <!--                    <div class="d-flex justify-content-between mb-2">-->
+                    <!--                        <p class="textmuted">Promo code</p>-->
+                    <!--                        <p class="fs-14 fw-bold">-<span class="fas fa-dollar-sign px-1"></span>100</p>-->
+                    <!--                    </div>-->
+                    <div class="d-flex justify-content-between mb-3">
+                        <p class="textmuted fw-bold">Total</p>
+                        <div class="d-flex align-text-top "><span
+                                class="fas fa-dollar-sign mt-1 pe-1 fs-14 "></span><span
+                                class="h4">{{purchaseSummary.totalAmount}}</span></div>
+
+                    </div>
+                </div>
+                <div class="col-12 px-0">
+                    <div class="row m-0">
+                        <div class="col-12 mb-4 p-0">
+
+                            <div class="btn btn-primary" onclick="handleSeatBooking()">Purchase<span
+                                    class="fas fa-arrow-right ps-2"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#section "script"}}
+    <script type="text/javascript">
+
+        let checkoutObject ={{{stringifyJson purchaseSummary}}}
+
+    </script>
+    <script type="text/javascript" src="/public/assets/js/checkout/checkout.js"></script>
+{{/section}}

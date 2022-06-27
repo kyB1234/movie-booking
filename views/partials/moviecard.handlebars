@@ -1,0 +1,15 @@
+<div class="col-lg-3 col-sm-4 col-11">
+    <div class="card-movie" onclick="openMovie('{{movie.movieId}}')">
+        <img class="card-img-top"
+             src="{{getObjectFromArray movie.images 0 "mainImg"}}"
+             alt="{{movie.movieName}}">
+        <div class="card-body">
+            <p class="card-text">{{movie.movieName}}</p>
+            {{#each (splitLanguage movie.language ",") as |language|}}
+                <div class="chip">
+                    {{language}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

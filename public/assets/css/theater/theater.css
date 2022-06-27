@@ -1,0 +1,215 @@
+.theater_section {
+    margin-top: 61px;
+}
+
+.theater {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.theater-calendar-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 600px;
+}
+
+.theater-calendar {
+    margin-left: 60px;
+}
+
+.theater-calendar-list {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.theater-calendar-date {
+    width: 62px;
+    height: 70px;
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+.theater-calendar-date_btn {
+    width: 62px;
+    height: 70px;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #e5e7e8;
+    border-radius: 3px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.theater-calendar-date_select {
+    border-color: #3478c1;
+    background-color: #3478c1;
+    color: #fff;
+}
+
+.theater-calendar-date_btn_weekday {
+    font-family: proxima-nova, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #3478c1;
+    margin-top: 7px;
+    height: 12px;
+}
+
+.theater-calendar-date_btn_month {
+    font-size: 12px;
+    letter-spacing: .3px;
+    margin-top: 5px;
+    font-family: "Futura Condensed", "Arial Narrow", Arial, sans-serif;
+    color: #171c20;
+    font-weight: 400;
+    display: block;
+    overflow: hidden;
+}
+
+.theater-calendar-date_btn_day {
+    font-size: 25px;
+    font-family: "Futura Condensed", "Arial Narrow", Arial, sans-serif;
+    color: #171c20;
+    font-weight: 400;
+    display: block;
+    overflow: hidden;
+}
+
+.btn_select {
+    color: #fff;
+}
+
+.theater-detail-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.theater-detail-showtime {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #cccfd1;
+    background-color: #fff;
+    position: relative;
+}
+
+.theater-detail-showtime_header {
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.theater-detail-showtime_header_name {
+    display: flex;
+}
+
+.theater-detail-showtime_header_name h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    line-height: 24px;
+    margin: 0;
+}
+
+.theater-detail-showtime_header_address {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.theater-detail-showtime_header_address p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3478c1;
+    margin: 0;
+}
+
+.theater-detail-showtime_variants_format {
+    border-top: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-top: 0;
+    color: #171C20;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.theater-detail-showtime_variants_list_wrapper {
+    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+}
+
+.theater-detail-showtime_variants_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.theater-detail-showtime_variants_time {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 72px;
+    height: 35px;
+}
+
+.theater-detail-showtime_variants_time_btn {
+    width: 78px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.arrow {
+    max-width: 35px;
+    max-height: 40px;
+    min-width: 35px;
+    min-height: 40px;
+    opacity: 0.7;
+}
+
+.calendar-left-triangle {
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.calendar-right-triangle {
+    position: absolute;
+    top: 30%;
+    right: 0px;
+}
+
+.theater-error {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #cccfd1;
+    background-color: #fff;
+    position: relative;
+    visibility: hidden;
+}
+

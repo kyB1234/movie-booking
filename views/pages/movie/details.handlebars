@@ -1,0 +1,124 @@
+<section class="movie-detail-section">
+    <div class="movie-detail">
+        <!-- Movie detail head section -->
+        <section class="movie-detail-head-wrapper">
+            <div id="movie-detail-background" class="movie-detail-head_background">
+                <div class="movie-detail-head">
+                    <div class="movie-detail-post_trailer">
+                        <div id="postImg" class="movie-detail-post_img">
+                        </div>
+                        <div id="movie-detail-trailer_icon">
+                        </div>
+                    </div>
+                    <div class="movie-detail-basic-info-wrapper">
+                        <div class="movie-detail-basic-info">
+                            <section>
+                                <h1 id="title"></h1>
+                            </section>
+                            <section class="mdbi-rating">
+                                <div class="mdbi-rating_img">
+
+                                    <img src="/public/assets/images/details/heart.png" alt="rating">
+
+                                </div>
+                                <div class="mdbi-rating_rate">
+                                    <p id="rating" style="padding:5px; color: #FFFFFF; background-color: #000000 ; border-radius: 5px;"></p>
+                                </div>
+                            </section>
+                            <section class="mdbi-format">
+                                <p id="format"></p>
+                                <p id="format"></p>
+                            </section>
+                            <section class="mdbi-attribute">
+                                <p class='attribute' style="padding:5px; color: #FFFFFF; background-color: #000000 ; border-radius: 5px;" id="time"></p>
+                                <p class='attribute' style="padding:5px ; color: #FFFFFF; background-color: #000000; border-radius: 5px;" id="genre"></p>
+                            </section>
+                            <section class="mdbi-releaseInfo">
+                                <p class='attribute' style="padding:5px ; color: #FFFFFF; background-color: #000000; border-radius: 5px;" id="language"></p>
+                                <p class='attribute' style="padding:5px ; color: #FFFFFF; background-color: #000000; border-radius: 5px;" id="releaseDate"></p>
+                            </section>
+                            <section class="mdbi-book">
+                                <div class="mdbi-book_button">
+                                    <button id="book" style="color: #000000; background-color: #FFFFFF">
+                                        <span style="color: #000000">Book tickets</span>
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Movie detail head section end -->
+
+        <!-- Movie detail information section-->
+        <section class="movie-detail-info-wrapper">
+            <div class="movie-detail-info">
+                <section class="movie-detail-info_about-wrapper">
+                    <div class="movie-detail-info_header">
+                        <h2>About the Movie</h2>
+                    </div>
+                    <div class="movie-detail-info_about">
+                        <p id="info"></p>
+                    </div>
+                </section>
+                <section class="movie-detail-info_cast-wrapper">
+                    <div class="movie-detail-info_header">
+                        <h2>Cast</h2>
+                    </div>
+                    <div class="movie-detail-info_cast">
+                        <div class="cast-detail">
+                            <ul id="movie-detail-cast" class="movie-detail-info_cast_list">
+
+                            </ul>
+                        </div>
+                        <div class="cast-left-triangle">
+                            <img src="/public/assets/images/details/arrow_left.png" id="cast_arrow_left" class="arrow" alt="Cast Left">
+                        </div>
+                        <div class="cast-right-triangle">
+
+                            <img src="/public/assets/images/details/arrow_right.png" id="cast_arrow_right" class="arrow" alt="Cast Right">
+
+                        </div>
+                    </div>
+                </section>
+                <section class="movie-detail-info_reviews-wrapper">
+                    <div class="movie-detail-info_header">
+                        <h2>Reviews</h2>
+                    </div>
+                    <div class="movie-detail-info_reviews">
+                        <div class="review-detail">
+                            <ul id="movie-detail-reviews" class="movie-detail-info_review_list">
+                            </ul>
+                        </div>
+                        <div class="review-left-triangle">
+
+                            <img src="/public/assets/images/details/arrow_left.png" id="review_arrow_left" class="arrow" alt="User Left">
+                        </div>
+                        <div class="review-right-triangle">
+                            <img src="/public/assets/images/details/arrow_right.png" id="review_arrow_right" class="arrow" alt="User Right">
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!--Movie detail information end section-->
+    </div>
+</section>
+{{#section "styles"}}
+
+    <link rel="stylesheet" href="/public/assets/css/details/movieDetails.css">
+
+{{/section}}
+{{#section "script"}}
+    <script type="text/javascript">
+        const movieId = '{{id}}';
+    </script>
+    <script src="/public/assets/js/details/details_movieInfo.js"></script>
+    <script src="/public/assets/js/details/details_casts.js"></script>
+    <script src="/public/assets/js/details/details_reviews.js"></script>
+{{/section}}
+
+
+

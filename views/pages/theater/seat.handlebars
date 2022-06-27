@@ -1,0 +1,36 @@
+{{#section "styles"}}
+    <link rel="stylesheet" href="../../../public/assets/css/seat.css"/>
+{{/section}}
+<div class="containerSeat">
+    <h1>{{movieInfo.movieName}}</h1>
+    <div class="movie-info">
+        <p>{{theatreInfo.theatreName}} | {{dateParser movieInfo.movieDate}} | {{timeParser movieInfo.movieDate}} | {{movieInfo.movieLanguage}} |
+            ${{movieInfo.price}} </p>
+    </div>
+    <div class="theatreContainer" id="theatreContainer">
+        <div class="screen"></div>
+    </div>
+
+    <button class="continueButton" style="color: #000000; background-color: #FFFFFF" id="continueButton">Continue</button>
+
+</div>
+{{#section "script"}}
+    <script type="text/javascript">
+        const movieId = '{{movieInfo.movieId}}';
+        const screenId = '{{movieInfo.screenId}}'
+        const movieName = '{{movieInfo.movieName}}';
+        const movieImage = '{{movieInfo.movieImage}}';
+        const runtime = {{movieInfo.runtime}}
+        const movieDate = '{{movieInfo.movieDate}}';
+        const movieTime = '{{movieInfo.movieTime}}';
+        const theatreId = '{{theatreInfo.theatreId}}';
+        const theatreName = '{{theatreInfo.theatreName}}';
+        const showTimeId = '{{{movieInfo.showTimeId}}}';
+        const language = '{{{movieInfo.movieLanguage}}}';
+        const price = '{{movieInfo.price}}';
+        const seatInfo = '{{{seatInfo}}}';
+
+    </script>
+    <script src="../../../public/assets/js/seat.js"></script>
+{{/section}}
+

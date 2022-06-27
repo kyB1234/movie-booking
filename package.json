@@ -1,0 +1,47 @@
+{
+  "name": "CMA",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harishb19/cs546_group5_final_project.git"
+  },
+  "keywords": [],
+  "author": "Harish Balasubramanian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harishb19/cs546_group5_final_project/issues"
+  },
+  "homepage": "https://github.com/harishb19/cs546_group5_final_project#readme",
+  "dependencies": {
+    "@khanacademy/tota11y": "^0.2.0",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.27.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.1",
+    "express-session": "^1.17.2",
+    "formidable": "^2.0.1",
+    "ip": "^1.1.5",
+    "method-override": "^3.0.0",
+    "mongodb": "^4.2.0",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.0",
+    "passport-google-oauth2": "^0.2.0",
+    "qrcode": "^1.5.0",
+    "serve-favicon": "^2.5.0",
+    "toastify-js": "^1.11.2"
+  },
+  "devDependencies": {
+    "nodemon": "~2.0.5"
+  }
+}

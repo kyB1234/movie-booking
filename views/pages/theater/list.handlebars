@@ -1,0 +1,41 @@
+<section class="theater_section">
+    <div class="theater">
+        <section class="theater-calendar-wrapper">
+            <div id="calendar" class="theater-calendar">
+                <ul id="calendar_list" class="theater-calendar-list">
+                </ul>
+            </div>
+            <div class="calendar-left-triangle">
+                <img src="/public/assets/images/details/arrow_left.png" id="calendar_arrow_left" class="arrow" alt="Calendar left">
+            </div>
+            <div class="calendar-right-triangle">
+                <img src="/public/assets/images/details/arrow_right.png" id="calendar_arrow_right" class="arrow" alt="Calendar Right">
+            </div>
+        </section>
+        <section id="theater-detail" class="theater-detail-section">
+
+        </section>
+        <section>
+            <div class="theater-error">
+                <h1>No such movie today!</h1>
+            </div>
+        </section>
+
+    </div>
+</section>
+
+
+{{#section "styles"}}
+
+    <link rel="stylesheet" href="/public/assets/css/theater/theater.css">
+
+{{/section}}
+{{#section "script"}}
+    <script type="text/javascript">
+        const movieId = '{{id}}';
+    </script>
+    <script src="/public/assets/js/theater/theater.js"></script>
+{{/section}}
+
+
+

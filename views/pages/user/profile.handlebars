@@ -1,0 +1,79 @@
+{{#section "styles"}}
+    <link rel="stylesheet" href="../../../public/assets/css/userprofile.css"/>
+{{/section}}
+
+
+<h1 id="greetUser"></h1>
+<div class="card" style="width: 30rem;">
+    <div class="card-body">
+        <h2 class="card-title">User Details</h2>
+        <button id="user-details-edit-btn" class="user-details-edit-btn">Edit</button>
+        <button id="user-details-undo-btn" class="user-details-undo-btn">Undo</button>
+        <form id="ajax-form">
+            <div class="display-same-line">
+                <h3>First Name:</h3>
+                <h3 id="user-fname" class="user-data-display"></h3> <input id="user-fname-input" name="firstName"
+                                                                           class="user-AJAX-form" type="text">
+            </div>
+            <p class="invalid-error fname-error">Invalid First Name</p>
+
+            <div class="display-same-line">
+                <h3>Last Name:</h3>
+                <h3 id="user-lname" class="user-data-display"></h3> <input id="user-lname-input" name="lastName"
+                                                                           class="user-AJAX-form" type="text">
+            </div>
+            <p class="invalid-error lname-error">Invalid Last Name</p>
+
+            <div>
+                <div class="display-same-line"><h3>Gender: </h3>
+                    <h3 id="user-gender" class="user-data-display"></h3></div>
+                <input class="user-AJAX-form" type="radio" id="gender-male" name="gender" value="male">
+                <label class="user-AJAX-form" for="gender-male">Male</label><br>
+                <input class="user-AJAX-form" type="radio" id="gender-female" name="gender" value="female">
+                <label class="user-AJAX-form" for="css">Female</label><br>
+                <input class="user-AJAX-form" type="radio" id="gender-other" name="gender" value="other">
+                <label class="user-AJAX-form" for="gender-other">Other</label>
+            </div>
+
+            <div class="display-same-line">
+                <h3>Date of Birth: </h3>
+
+                <h3 id="user-dob" class="user-data-display"></h3>
+                <input name="dateOfBirth" id="user-dob-input" class="user-AJAX-form" type="date">
+            </div>
+
+            <div class="display-same-line">
+                <h3>Phone No:</h3>
+                <h3 id="user-phone" class="user-data-display"></h3>
+                <input name="phoneNo" id="user-phone-input" class="user-AJAX-form" type="text">
+
+            </div>
+            <p class="invalid-error phoneNo-error">Invalid Phone Number</p>
+
+            <div class="display-same-line">
+
+                <h3>Email:</h3>
+                <h3 id="user-email" class=""></h3>
+            </div>
+
+            <input type="submit" name="ajax-submit-btn" id="ajax-submit-btn" class="user-AJAX-form">
+
+        </form>
+    </div>
+    <form method="get" action="users/orders">
+        <input type="submit" value="Order History">
+    </form>
+</div>
+{{#section "script"}}
+    <script type="text/javascript">
+        const userId = '{{user.userId}}';
+        let firstName = '{{user.firstName}}';
+        let lastName = '{{user.lastName}}';
+        let gender = '{{user.gender}}';
+        let dateOfBirth = '{{user.dateOfBirth}}';
+        let phoneNo = '{{user.phoneNo}}';
+        const email = '{{{user.email}}}';
+    </script>
+
+    <script src="../../../public/assets/js/user/profile.js"></script>
+{{/section}}

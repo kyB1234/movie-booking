@@ -1,0 +1,59 @@
+{{#section "styles"}}
+    <link rel="stylesheet" href="/public/assets/css/toast/toast.css">
+{{/section}}
+
+
+{{#if toastMessage}}
+
+    {{#if (isEqual toastStatus 'success')}}
+
+        <script type="module">
+            const a = () => {
+                Toastify({
+                    text: " {{toastMessage}}",
+                    duration: 3000,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "right", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                        background: "linear-gradient(to right, #008000F9, #0080009E)",
+                    },
+                    onClick: function () {
+                    } // Callback after click
+                }).showToast();
+
+            }
+
+            a()
+
+        </script>
+
+    {{else}}
+        {{toastStatus}}
+
+
+        <script type="module">
+            const a = () => {
+                Toastify({
+                    text: " {{toastMessage}}",
+                    duration: 3000,
+                    close: true,
+                    gravity: "top", // `top` or `bottom`
+                    position: "right", // `left`, `center` or `right`
+                    stopOnFocus: true, // Prevents dismissing of toast on hover
+                    style: {
+                        background: 'linear-gradient(to right, #FF0000F9, #FF00009E)',
+                    },
+                    onClick: function () {
+                    } // Callback after click
+                }).showToast();
+
+            }
+
+            a()
+
+        </script>
+    {{/if}}
+
+{{/if}}

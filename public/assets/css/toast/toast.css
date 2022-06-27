@@ -1,0 +1,11 @@
+.bg-success-alert {
+    /*background-color: green !important;*/
+    background: linear-gradient(to right, #008000F9, #0080009E) !important;
+
+}
+
+.bg-danger-alert {
+    /*background-color: red !important;*/
+    background: linear-gradient(to right, #FF0000F9, #FF00009E) !important;
+
+}

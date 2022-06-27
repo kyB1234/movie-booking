@@ -1,0 +1,38 @@
+
+<h1>Your Order History</h1>
+
+<table class="table">
+    <thread>
+        <tr>
+            <th>Movie</th>
+            <th>Theatre</th>
+            <th>Show Date</th>
+            <th>Show Time</th>
+            <th>Seats</th>
+            <th>Price Per Ticket</th>
+            <th>Total Cost</th>
+        </tr>
+    </thread>
+    <tbody>
+{{#each orderHistory}}
+    <tr>
+    {{#each this}}
+        <th>{{this}}</th>
+
+    {{/each}}
+    </tr>
+{{/each}}
+    </tbody>
+</table>
+
+<form action="/users" method="get">
+    <input type="submit" value="Back">
+</form>
+
+{{#section "script"}}
+    <script type="text/javascript">
+        const orderHistory = '{{orderHistory}}';
+    </script>
+
+    <script src="../../../public/assets/js/user/orderHistory.js"></script>
+{{/section}}

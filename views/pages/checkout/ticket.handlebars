@@ -1,0 +1,56 @@
+{{#section "styles"}}
+    <link rel="stylesheet" href="/public/assets/css/checkout/ticket1.css">
+{{/section}}
+<div class="container">
+    <div class="row m-0">
+
+        <div class="ticket">
+            <div class="ticket--start">
+                <img alt="ticket" src="{{{ticket.movieImage}}}"/>
+            </div>
+            <div class="ticket--center">
+                <div class="ticket--center--row">
+                    <div class="ticket--center--col">
+                        <span>Movie</span>
+                        <strong>{{{ticket.movieName}}}</strong>
+                    </div>
+                </div>
+                <div class="ticket--center--row">
+
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Name</span>
+                        <span class="ticket--info--content">{{userName}}</span>
+                    </div>
+                </div>
+                <div class="ticket--center--row">
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Date and time</span>
+                        <span class="ticket--info--subtitle">{{dateParser ticket.showTimeId}}</span>
+                        <span class="ticket--info--content">{{timeParser ticket.showTimeId}}</span>
+                    </div>
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Location</span>
+                        <span class="ticket--info--subtitle">{{ticket.theatreName}}</span>
+                    </div>
+                </div>
+                <div class="ticket--center--row">
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Seat</span>
+                        <span class="ticket--info--content">{{ticket.seats}}</span>
+                    </div>
+
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Order id</span>
+                        <span class="ticket--info--content">#{{ticket.orderId}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket--end">
+                <div><img alt="ticket" src="{{url}}"></div>
+                <div class="text-white">CMA - Catch Movies in Action</div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

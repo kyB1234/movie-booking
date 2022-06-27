@@ -1,0 +1,95 @@
+{{#section "styles"}}
+    <link rel="stylesheet" href="/public/assets/css/landing/landing.css">
+{{/section}}
+<!-- Banner -->
+<section class="call-to-action-section">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            {{#each bannerIndex as |index|}}
+                {{#if (isEqual index 0)}}
+                    <li data-target="#carouselExampleIndicators active" data-slide-to="{{index}}"></li>
+                {{else}}
+                    <li data-target="#carouselExampleIndicators" data-slide-to="{{index}}"></li>
+
+                {{/if}}
+            {{/each}}
+        </ol>
+        <div class="carousel-inner">
+
+            {{#each banners as |banner index|}}
+                {{#if (isEqual index 0)}}
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                             onclick="openMovie(`{{getObject banner 'movieId'}}`)"
+                             src="{{getObject banner 'image'}}" alt="slide">
+                    </div>
+                {{else}}
+                    <div class="carousel-item ">
+                        <img class="d-block w-100"
+                             onclick="openMovie(`{{getObject banner 'movieId'}}`)"
+                             src="{{getObject banner 'image'}}" alt="slide">
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only" style="color: #000000">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only" style="color: #000000">Next</span>
+        </a>
+    </div>
+
+</section>
+
+{{!-- Upcoming Movies --}}
+<div class="container-fluid">
+    <h1 class="mt-5">Upcoming Movies</h1>
+    <div class="scrolling-wrapper row flex-row flex-nowrap new-top-css">
+        {{#each upcomingMovies as |movie|}}
+            {{> topcard movie=(parseJson movie )}}
+        {{/each}}
+    </div>
+</div>
+
+
+{{!-- Top Movies --}}
+<div class="container-fluid">
+    <h1 class="mt-5">Top Movies</h1>
+    <div class="scrolling-wrapper row flex-row flex-nowrap new-top-css">
+        {{#each topMovies as |movie|}}
+            {{> topcard movie=(parseJson movie )}}
+        {{/each}}
+    </div>
+</div>
+
+<br/>
+
+{{!-- Genres --}}
+<div class="container-fluid">
+    <h1 class="mt-5">Genres</h1>
+    <div class="scrolling-wrapper row flex-row flex-nowrap new-top-css">
+        {{#each genreMovies as |genre|}}
+            {{> genrecard genre=(parseJson genre )}}
+        {{/each}}
+    </div>
+</div>
+{{#section "script"}}
+    <script type="text/javascript">
+        const openMovie = (id) => {
+            window.location = `/movies/${id}`
+        }
+        const openGenre = (id) => {
+            window.location = `/movies/`
+        }
+    </script>
+    <script src="/public/assets/js/movieFilters/movieFilters.js"></script>
+    <script type="text/javascript">
+        const genreClick = (name) => {
+            filterMovies('genre', `${name}`)
+            applyFilters();
+        }
+    </script>
+{{/section }}

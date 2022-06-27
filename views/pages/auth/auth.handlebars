@@ -1,0 +1,54 @@
+{{#section "styles"}}
+    <link rel="stylesheet" href="/public/assets/css/auth/login.css">
+
+{{/section}}
+<section class="root">
+    <div class="container">
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-login-form/draw2.png"
+                     class="img-fluid"
+                     alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+
+                <form id="auth" method="POST" action="{{#if isLogin}}login{{else}}register{{/if}}"
+                      enctype="multipart/form-data">
+
+                    <div class="section-padding">
+                        <p class="lead fw-normal mb-0 me-3 text-center">
+                            {{#if isLogin}}
+                                Login in
+                            {{else}}
+                                Signup
+                            {{/if}}
+                            with
+                        </p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center justify-content-center ">
+                        <a href="/oauth/signin" class="btn btn-round google">
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                            <span>
+                                Signin / Signup with google
+                            </span>
+
+                        </a>
+
+                    </div>
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                    </div>
+                    {{#if isLogin}}
+                        {{> login}}
+                    {{else}}
+                        {{> signup}}
+
+                    {{/if}}
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>

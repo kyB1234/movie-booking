@@ -1,0 +1,44 @@
+{{#section "styles"}}
+    <link rel="stylesheet" href="/public/assets/css/checkout/ticket1.css">
+{{/section}}
+<div class="container">
+    <div class="row m-0">
+
+        <div class="ticket">
+            <div class="ticket--start">
+                {{#if isValid}}
+                    <img src="https://firebasestorage.googleapis.com/v0/b/cma-dev-93ea3.appspot.com/o/ClipartKey_1545658.png?alt=media&token=16f85fd9-6a18-407e-adcf-89fa4650c35a"
+                         alt="">
+                {{else}}
+                    <img src="https://firebasestorage.googleapis.com/v0/b/cma-dev-93ea3.appspot.com/o/ClipartKey_121818.png?alt=media&token=41c32206-8db7-4dee-8a6a-3e2513314721"
+                         alt="">
+                {{/if}}
+            </div>
+            <div class="ticket--center">
+                <div class="ticket--center--row">
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Date and time</span>
+                        <span class="ticket--info--subtitle">{{dateParser showTimeId}}</span>
+                        <span class="ticket--info--content">{{timeParser showTimeId}}</span>
+                    </div>
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Valid</span>
+                        <span class="ticket--info--subtitle">{{isValid}}</span>
+                    </div>
+                </div>
+                <div class="ticket--center--row">
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Seat</span>
+                        <span class="ticket--info--content">{{seats}}</span>
+                    </div>
+
+                    <div class="ticket--center--col">
+                        <span class="ticket--info--title">Order id</span>
+                        <span class="ticket--info--content">#{{orderId}}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.user-AJAX-form {
+    display: none;
+    color: black;
+}
+
+.display-same-line {
+    display: flex;
+}
+
+.user-data-display {
+
+}
+
+.user-details-undo-btn {
+    display: none;
+}
+
+.user-details-edit-btn {
+
+}
+
+input:invalid {
+    border: 2px dashed red;
+}
+
+.invalid-error {
+    display: none;
+    color: red;
+}

@@ -1,0 +1,418 @@
+.movie-detail-section {
+    margin-top: 61px;
+}
+
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.movie-detail-id {
+    display: none;
+}
+
+.movie-detail-head-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.movie-detail-head_background {
+    width: 100%;
+    background-color: gray;
+    background-image: linear-gradient(90deg, rgb(34, 34, 34) 24.97%, rgb(34, 34, 34) 38.3%, rgba(34, 34, 34, 0.04) 97.47%, rgb(34, 34, 34) 100%);
+    display: flex;
+
+}
+
+.movie-detail-head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.movie-detail-post_trailer {
+    width: 261px;
+    height: 416px;
+    display: flex;
+}
+
+.movie-detail-post_img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.movie-detail-post_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-detail-basic-info-wrapper {
+    margin-left: 70px;
+    display: flex;
+}
+
+.movie-detail-basic-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.movie-detail-basic-info h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+    margin: 0px;
+}
+
+.mdbi-rating {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mdbi-rating_img {
+    width: 32px;
+    height: 32px;
+}
+
+.mdbi-rating_img img {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+}
+
+.mdbi-rating_rate {
+    margin-left: 10px;
+}
+
+.mdbi-rating_rate p {
+    color: rgb(238, 238, 238);
+    font-size: 23px;
+    margin: 0px;
+}
+
+.mdbi-format {
+    background-color: rgb(238, 238, 238);
+    margin-top: 30px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    display: flex;
+    align-self: flex-start;
+}
+
+.mdbi-format p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0px;
+}
+
+.mdbi-attribute {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mdbi-attribute a {
+    font-size: 16px;
+    font-weight: normal;
+    color: white !important;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+.mdbi-attribute .split {
+    padding: 0px 8px;
+}
+
+.mdbi-releaseInfo {
+    display: flex;
+    margin-top: 10px;
+}
+
+.mdbi-releaseInfo a {
+    font-size: 12px;
+    font-weight: normal;
+    color: white !important;
+    line-height: 1.2;
+    margin: 0px;
+}
+
+.mdbi-releaseInfo .split {
+    padding: 0px 5px;
+}
+
+.mdbi-book {
+    margin-top: 40px;
+}
+
+.mdbi-book_button {
+    max-width: 250px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+}
+
+.mdbi-book_button button {
+    background-color: rgb(248, 68, 100);
+    width: 100%;
+    border: 1px solid rgb(248, 68, 100);
+    border-radius: 8px;
+    display: flex;
+}
+
+.mdbi-book_button span {
+    padding: 12px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    line-height: 1.5;
+    margin: auto;
+}
+
+.movie-detail-info-wrapper {
+    display: flex;
+}
+
+.movie-detail-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    max-width: 80%;
+}
+
+.movie-detail-info h2 {
+    margin: 0px;
+}
+
+.movie-detail-info_header {
+    padding: 10px;
+}
+
+.movie-detail-info_about-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.movie-detail-info_about {
+    padding: 10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.movie-detail-info_cast-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.movie-detail-info_cast {
+    position: relative;
+    overflow: hidden;
+}
+
+.cast-detail {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.movie-detail-info_cast_list {
+    padding: 10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.cast {
+    max-width: 120px;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.cast_img {
+    max-width: 120px;
+    max-height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cast_img img {
+    border-radius: 60px;
+    position: absolute;
+    max-width: 120px;
+    max-height: 120px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.cast h3 {
+    margin: auto;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.cast h4 {
+    margin: auto;
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+    line-height: 1.3;
+}
+
+.cast-left-triangle {
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.cast-right-triangle {
+    position: absolute;
+    top: 30%;
+    right: 0px;
+}
+
+.arrow {
+    max-width: 35px;
+    max-height: 40px;
+    min-width: 35px;
+    min-height: 40px;
+    opacity: 0.7;
+}
+
+.movie-detail-info_reviews-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.movie-detail-info_reviews {
+    position: relative;
+    overflow: hidden;
+}
+
+.review-detail {
+    position: relative;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.review-left-triangle {
+    position: absolute;
+    left: 0;
+    top: 45%;
+}
+
+.review-right-triangle {
+    position: absolute;
+    top: 45%;
+    right: 0px;
+}
+
+.movie-detail-info_review_list {
+    padding: 10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.review-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    width: 400px;
+    min-width: 400px;
+    height: 240px;
+    min-height: 240px;
+}
+
+.review-info {
+    margin: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewer-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+}
+
+.reviewer {
+    display: flex;
+    left: 0;
+    margin-left: 20px;
+}
+
+.reviewer-img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    background: none;
+}
+
+.reviewer-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+}
+
+.reviewer-name {
+    height: 40px;
+    padding: 0px 12px 0px;
+}
+
+.reviewer-name h3 {
+    margin: 0px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.review-content {
+    display: flex;
+    height: 100%;
+}
+
+.review-content {
+    display: flex;
+    left: 0;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.review-content p {
+    color: rgb(102, 102, 102);
+    padding-top: 4px;
+    word-break: break-word;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+}
